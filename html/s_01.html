@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--让IE以最新的内核渲染 -->
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	让视口宽度为设备宽度,不允许用户缩放
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	不自动识别电话号码和邮编
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="email=no"/> -->
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <!--  禁止ios设备将数字作为拨号连接，邮箱自动发送，点击地图跳转 -->
+    <meta name="format-detection" content="telephone=no,email=no，adress=no">
+    <!-- 强制全屏显示 -->
+    <meta name="full-screen" content="yes">
+    <!--  开启对webapp的支持 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--  web app 应用下状态条（屏幕顶部条）的颜色,默认值为 default（白色） -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- 禁止浏览器从的缓存中访问页面内容 -->
+    <meta http-equiv="Pragma" content="no-cache">
+	<title>Document</title>
+	<link rel="stylesheet" href="../lib/swiper-3.3.1.min.css">
+	<link rel="stylesheet" href="../css/s_01.css">
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<h1>长隆旅游</h1>
+			<a href="#"></a>
+		</header>
+		<main class="main" id="main">
+			<div class="scroller">
+				<!-- 轮播 -->
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide"><img src="../images/s_01_03.jpg" alt=""></div>
+				        <div class="swiper-slide"><img src="../images/s_01_03.jpg" alt=""></div>
+				        <div class="swiper-slide"><img src="../images/s_01_03.jpg" alt=""></div>
+				    </div>
+				    <!-- 如果需要分页器 -->
+				    <div class="swiper-pagination"></div>
+				</div>
+
+				<!-- dl列表导航 -->
+				<div class="dls">
+					<a href="#">
+						<dl>
+							<dt><img src="../images/s_01_04_03.gif" alt=""></dt>
+							<dd>乐园</dd>
+						</dl>
+					</a>
+
+					<a href="#">
+						<dl>
+							<dt><img src="../images/s_01_05_03.gif" alt=""></dt>
+							<dd>演出</dd>
+						</dl>
+					</a>
+
+					<a href="#">
+						<dl>
+							<dt><img src="../images/s_01_06_03.gif" alt=""></dt>
+							<dd>酒店</dd>
+						</dl>
+					</a>
+
+					<a href="#">
+						<dl>
+							<dt><img src="../images/s_01_07_03.gif" alt=""></dt>
+							<dd>美食</dd>
+						</dl>
+					</a>
+
+					<a href="#">
+						<dl>
+							<dt><img src="../images/s_01_08_03.gif" alt=""></dt>
+							<dd>促销</dd>
+						</dl>
+					</a>
+				</div>
+					
+				<!-- 热门推荐 -->
+				<div class="hort">
+					<h2><span></span>热门推荐</h2>
+					<div class="h_dls" id="h_dls">
+						<a href="#">
+							<dl>
+								<dt><img src="../images/s_01_09_03.gif" alt=""></dt>
+								<dd>珠海长隆横琴酒店 万圣节海洋王国</dd>
+							</dl>
+						</a>
+					</div>
+				</div>
+	
+				<!-- 珠海 广州 Tab切换 -->
+
+				<div class="zg">
+					<p class="tab" id="tab">
+						<span class="tab_active">珠海</span>
+						<span>广州</span>
+					</p>
+					<div class="zg_dls" id="zg_dls">
+					</div>
+				</div>
+
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+<script src="../lib/zepto.min.js"></script>
+<script src="../lib/iscroll-probe.js"></script>
+<script src="../lib/setfontsize.js"></script>
+<script type="text/javascript"  src="../lib/swiper-3.3.1.jquery.min.js"></script>
+<script type="text/javascript"  src="../lib/swiper-3.3.1.min.js"></script>
+<script type="text/javascript"  src="../js/s_01.js"></script>
+</body>
+</html>

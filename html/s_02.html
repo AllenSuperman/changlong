@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--让IE以最新的内核渲染 -->
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	让视口宽度为设备宽度,不允许用户缩放
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	不自动识别电话号码和邮编
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="email=no"/> -->
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <!--  禁止ios设备将数字作为拨号连接，邮箱自动发送，点击地图跳转 -->
+    <meta name="format-detection" content="telephone=no,email=no，adress=no">
+    <!-- 强制全屏显示 -->
+    <meta name="full-screen" content="yes">
+    <!--  开启对webapp的支持 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--  web app 应用下状态条（屏幕顶部条）的颜色,默认值为 default（白色） -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- 禁止浏览器从的缓存中访问页面内容 -->
+    <meta http-equiv="Pragma" content="no-cache">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/s_02.css">
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<a href="#"></a>
+			<b></b>
+			<input type="text" value="请输入酒店·门票名称">
+			<p>全部城市 <span></span></p>
+		</header>
+		<!-- 导航条内容 -->
+			<ul class="nav" id="nav">
+				<li date-direction="down" class="n_left"><p>酒店+门票<span></span></p></li>
+				<li date-direction="center" class="n_center"><p>价格  <span class="jiage"></span><span></span></p> </li>
+				<li date-direction="down" class="n_right"><p>筛选<span></span></p></li>
+			</ul>
+		<main class="main" id="main">
+			
+			
+			<div class="content">
+				<div class="imgs" id="imgs">
+					<div class="json_imgss">
+						<!-- <img src="../images/s_0205_03.gif" alt=""> --> 
+					</div>
+				</div>
+
+				<div class="mark" id="mark"> 
+					<div class="top" id="top">
+						<div class="nav_json">
+						</div>
+					</div>
+					<div class="down">
+						<p><span>重置</span></p>
+						<p><span>确定</span></p>
+					</div>
+				</div>
+
+
+			</div>
+			
+		</main>
+		<footer class="footer"></footer>
+	</div>
+<script src="../lib/zepto.min.js"></script>
+<script src="../lib/iscroll-probe.js"></script>
+<script src="../lib/setfontsize.js"></script>
+<script type="text/javascript" src="../lib/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="../js/s_02.js"></script>
+
+</body>
+</html>

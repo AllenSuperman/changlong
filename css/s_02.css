@@ -1,0 +1,186 @@
+@import url("reset.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box; }
+
+body {
+  font-family: "Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+  font-family: "Microsoft YaHei";
+  font-size: 0.20rem; }
+
+html, body, .wrap {
+  color: #000;
+  width: 100%;
+  height: 100%; }
+
+.wrap {
+  height: 100%;
+  width: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header {
+  z-index: 9999;
+  height: 0.75rem;
+  position: relative; }
+  .header a {
+    position: absolute;
+    left: 0.25rem;
+    top: 50%;
+    margin-top: -0.14rem;
+    height: 0.28rem;
+    width: 0.17rem;
+    background: url(../images/s_0201_03.gif) no-repeat;
+    background-size: 100% 100%; }
+  .header input {
+    position: absolute;
+    height: 0.4rem;
+    width: 3.3rem;
+    left: 0.75rem;
+    top: 50%;
+    margin-top: -0.2rem;
+    border-radius: 0.3rem;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 0.4rem; }
+  .header b {
+    position: absolute;
+    height: 0.19rem;
+    width: 0.19rem;
+    top: 50%;
+    margin-top: -0.1rem;
+    left: 0.9rem;
+    /* background: url(../images/s_0202_03.gif) no-repeat;
+    background-size: 100% 100%; */
+    background: red; }
+  .header p {
+    width: 100%;
+    line-height: 0.75rem;
+    text-align: right;
+    padding-right: 0.4rem;
+    position: relative; }
+    .header p span {
+      height: 0.11rem;
+      width: 0.15rem;
+      position: absolute;
+      background: url(../images/s_0203_03.gif) no-repeat;
+      background-size: 100% 100%;
+      top: 50%;
+      margin-top: -0.05rem;
+      right: 0.15rem; }
+
+.nav {
+  z-index: 9999;
+  -webkit-flex-shrink: 0;
+  display: -webkit-flex;
+  height: 0.75rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid  #ccc; }
+  .nav li {
+    -webkit-flex-grow: 1;
+    text-align: center;
+    line-height: 0.75rem;
+    border-right: 1px solid #ccc;
+    padding-right: 0.32rem; }
+    .nav li p {
+      position: relative;
+      font-size: 0.21rem; }
+      .nav li p span {
+        position: absolute;
+        border: 0.12rem solid transparent;
+        border-top: 0.12rem solid #ccc;
+        top: 50%;
+        margin-top: -0.06rem;
+        right: 0.05rem; }
+      .nav li p .span_transfrom {
+        border-bottom: 0.12rem solid #552d86;
+        border-top: 0rem solid #ccc; }
+    .nav li:nth-of-type(2) span:nth-of-type(1) {
+      top: 0.27rem;
+      border-bottom: 0.12rem solid #ccc;
+      border-top: 0rem solid #ccc; }
+    .nav li:nth-of-type(2) span:nth-of-type(2) {
+      top: 0.45rem; }
+
+.main {
+  -webkit-flex-grow: 1;
+  position: relative;
+  height: 100%;
+  overflow: hidden; }
+  .main .content {
+    height: 100%; }
+    .main .content .imgs {
+      height: 100%;
+      width: 100%;
+      overflow: hidden; }
+      .main .content .imgs img {
+        display: block;
+        width: 4.97rem;
+        height: 2.84rem;
+        margin: 0.15rem auto 0 auto; }
+  .main .mark {
+    z-index: 555;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background: #fff;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-transition: top .5s; }
+    .main .mark .top {
+      -webkit-flex-grow: 1;
+      overflow: hidden; }
+      .main .mark .top p {
+        line-height: 50px; }
+      .main .mark .top section {
+        padding-top: 0.15rem; }
+        .main .mark .top section h3 {
+          height: 0.3rem;
+          line-height: 0.3rem;
+          padding-left: 0.15rem;
+          font-size: 0.21rem; }
+          .main .mark .top section h3:nth-of-type(1) {
+            margin-top: 0.15rem; }
+        .main .mark .top section div {
+          display: -webkit-flex;
+          -webkit-flex-wrap: wrap;
+          -webkit-justify-content: space-between;
+          padding: 0 0.15rem; }
+          .main .mark .top section div span {
+            width: 48%;
+            height: 0.6rem;
+            line-height: 0.6rem;
+            border-radius: 5px;
+            text-align: center;
+            border: 1px solid #ccc;
+            margin: 0.15rem 0; }
+          .main .mark .top section div .span_bg {
+            border: 1px solid #552d86; }
+    .main .mark .down {
+      -webkit-flex-shrink: 0;
+      height: 0.97rem;
+      background: #fff;
+      display: -webkit-flex; }
+      .main .mark .down p {
+        -webkit-flex-grow: 1;
+        position: relative; }
+        .main .mark .down p span {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: 0;
+          margin: auto;
+          width: 2.23rem;
+          height: 0.68rem;
+          background: #fe9900;
+          text-align: center;
+          line-height: 0.68rem;
+          font-size: 0.22rem;
+          color: #fff;
+          border-radius: 0.1rem; }
+        .main .mark .down p:nth-of-type(2) span {
+          background: #f25c29; }
